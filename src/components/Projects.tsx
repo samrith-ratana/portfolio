@@ -15,7 +15,7 @@ const projectData = [
   {
     title: 'Project One: E-commerce Platform',
     description: 'A full-featured e-commerce site built with Next.js, Stripe for payments, and PostgreSQL. Includes user authentication and an admin dashboard.',
-    imageUrl: 'https://placehold.co/600x400/0070f3/ffffff?text=Project+One',
+    imageUrl: '/qr.png',
     tags: ['Next.js', 'React', 'Tailwind CSS', 'Stripe', 'PostgreSQL'],
     liveUrl: '#',
     githubUrl: '#',
@@ -23,7 +23,7 @@ const projectData = [
   {
     title: 'Project Two: Task Management App',
     description: 'A collaborative task management application with real-time updates using Firebase. Features drag-and-drop functionality and notifications.',
-    imageUrl: 'https://placehold.co/600x400/1c1c22/ffffff?text=Project+Two',
+    imageUrl: '/qr.png',
     tags: ['React', 'Firebase', 'Material UI', 'Real-time'],
     liveUrl: '#',
     githubUrl: '#',
@@ -31,7 +31,7 @@ const projectData = [
   {
     title: 'Project Three: Personal Blog',
     description: 'A static-generated blog using Next.js and MDX for content. Optimized for SEO and performance with a clean, minimalist design.',
-    imageUrl: 'https://placehold.co/600x400/333333/ffffff?text=Project+Three',
+    imageUrl: '/qr.png',
     tags: ['Next.js', 'MDX', 'SEO', 'Static Site'],
     liveUrl: '#',
     githubUrl: '#',
@@ -46,7 +46,7 @@ const ProjectCard = ({ project }: { project: Project }) => (
         alt={project.title}
         className="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105"
         onError={(e) => {
-          e.currentTarget.src = 'https://placehold.co/600x400/1c1c22/f0f2f5?text=Project+Image';
+          e.currentTarget.src = '/qr.png';
         }}
       />
     </div>

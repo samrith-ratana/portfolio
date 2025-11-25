@@ -23,7 +23,7 @@ const About = () => {
           <div className="md:w-1/3">
 
             <Image
-              src="https://placehold.co/400x400/1c1c22/f0f2f5?text=Your+Photo"
+              src="/qr.png"
               alt="Your Name"
               width={400}
               height={400}
