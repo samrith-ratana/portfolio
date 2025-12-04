@@ -92,6 +92,5 @@ export default Contact;
 
 // git
 // git add .
- git commit -m "feat: add contact form with alert on submit failure"
-// git push 
-
+// git commit -m "feat: add contact form with alert on submit failure"
+// git push origin main
