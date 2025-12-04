@@ -48,7 +48,7 @@ const Hero = () => {
             <Linkedin size={28} />
           </a>
           <a
-            href="https://t.me/samrith_ratana"
+            href="https://x.com/samrith_ratana"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-white transition-colors"
