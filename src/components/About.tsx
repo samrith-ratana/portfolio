@@ -33,10 +33,10 @@ const About = () => {
           </div>
           <div className="md:w-2/3 text-lg text-secondary leading-relaxed space-y-5">
             <p>
-              Hello! Im a software developer based in <span className="text-white font-semibold">[Your City]</span>, crafting full-stack web applications with thoughtful user experiences and solid backend logic.
+              Hello! Im a software developer based in <span className="text-white font-semibold">Phnom Penh</span>, crafting full-stack web applications with thoughtful user experiences and solid backend logic.
             </p>
             <p>
-              I enjoy working across the stack and love building tools that solve real problems. Outside of tech, I enjoy <span className="text-white font-medium">[Hobby 1]</span>, <span className="text-white font-medium">[Hobby 2]</span>, and exploring new ideas in design and AI.
+              I enjoy working across the stack and love building tools that solve real problems. Outside of tech, I enjoy <span className="text-white font-medium">reading</span>, <span className="text-white font-medium">coding</span>, and exploring new ideas in design and AI.
             </p>
           </div>
         </div>
