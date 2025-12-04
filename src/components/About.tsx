@@ -23,7 +23,7 @@ const About = () => {
           <div className="md:w-1/3">
 
             <Image
-              src="/qr.png"
+              src="/profile.png"
               alt="Your Name"
               width={400}
               height={400}

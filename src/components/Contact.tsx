@@ -5,38 +5,8 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 const Contact: React.FC = () => {
   const [loading, setLoading] = useState(false);
 
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    setLoading(true);
-
-    const form = e.currentTarget;
-    const formData = new FormData(form);
-
-    const data = {
-      name: formData.get("name") as string,
-      email: formData.get("email") as string,
-      message: formData.get("message") as string,
-    };
-
-    try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
-
-      const result = await res.json();
-
-      if (!result.success) throw new Error("Failed to send message");
-
-      alert("Message sent successfully! You will receive a reply soon.");
-      form.reset();
-    } catch (err) {
-      alert("Failed to send message. Try again!");
-      console.error(err);
-    } finally {
-      setLoading(false);
-    }
+  async function handleSubmit() {
+      alert("error -> Failed to send message. Try again by other way!");
   }
 
   return (
@@ -60,11 +30,11 @@ const Contact: React.FC = () => {
             <div className="space-y-4 text-gray-300">
               <div className="flex items-center gap-3">
                 <Mail size={20} className="text-accent" />
-                samrithratana22@mekong.edu.kh
+                samrithratana@outlook.com
               </div>
               <div className="flex items-center gap-3">
                 <Phone size={20} className="text-accent" />
-                (+855) 68 417 647
+                (+855) 96 622 6109
               </div>
               <div className="flex items-center gap-3">
                 <MapPin size={20} className="text-accent" />
@@ -119,3 +89,9 @@ const Contact: React.FC = () => {
 };
 
 export default Contact;
+
+// git
+// git add .
+ git commit -m "feat: add contact form with alert on submit failure"
+// git push 
+
