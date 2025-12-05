@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Home, User, Briefcase, Mail } from 'lucide-react';
+import ThemeToggle from "@/components/themes/ThemeToggle";
 
 const Navbar = () => {
   const navItems = [
@@ -31,6 +32,7 @@ const Navbar = () => {
         <div className="md:hidden">
           {/* Mobile menu button can be added here */}
         </div>
+        <ThemeToggle/>
       </div>
     </nav>
   );
