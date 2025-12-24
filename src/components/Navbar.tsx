@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import { Moon, Sun } from "lucide-react";
 import Link from "next/link";
+import ThemeToggle from "@/components/themes/ThemeToggle";
+
 
 export default function Navbar() {
   const { theme, setTheme } = useTheme();
@@ -40,17 +42,7 @@ export default function Navbar() {
             ))}
           </div>
 
-          <button
-            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 hover:ring-2 ring-blue-400 transition-all text-slate-700 dark:text-slate-200"
-            aria-label="Toggle Dark Mode"
-          >
-            {mounted ? (
-              theme === "dark" ? <Sun size={20} /> : <Moon size={20} />
-            ) : (
-              <div className="w-5 h-5" /> // Placeholder to prevent layout shift
-            )}
-          </button>
+<ThemeToggle/>
         </div>
       </div>
     </nav>
