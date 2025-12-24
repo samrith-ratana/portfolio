@@ -1,0 +1,18 @@
+[
+  {
+    "id": "0785a139-4ed7-4771-8450-4c7190e46af8",
+    "sessionId": "bb6a0bcf-4d13-44d6-8034-f125944a99c0",
+    "userId": "f7613b27-5c6d-4c10-b6d7-fdeb34b3addc",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImY3NjEzYjI3LTVjNmQtNGMxMC1iNmQ3LWZkZWIzNGIzYWRkYyIsImlhdCI6MTc2NjU5NjIwNywiZXhwIjoxNzY3MjAxMDA3fQ.BNeiXlG2TZ8WxgAxI0J4RCecrcejm1mJ7fZEtBI5C74",
+    "createdAt": "2025-12-24T17:10:07.826Z",
+    "expiresAt": "2025-12-31T17:10:07.826Z"
+  },
+  {
+    "id": "6186a120-085d-4592-bfd9-784ebbeb7335",
+    "sessionId": "8f1adbbc-6e5d-4355-83d5-92c0cdd72e89",
+    "userId": "f7613b27-5c6d-4c10-b6d7-fdeb34b3addc",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImY3NjEzYjI3LTVjNmQtNGMxMC1iNmQ3LWZkZWIzNGIzYWRkYyIsImlhdCI6MTc2NjU5NjIyNiwiZXhwIjoxNzY3MjAxMDI2fQ.iYu0qh2dcjdcd7VllAnBV4q_se3clHDMk85hEvT742o",
+    "createdAt": "2025-12-24T17:10:26.372Z",
+    "expiresAt": "2025-12-31T17:10:26.372Z"
+  }
+]
