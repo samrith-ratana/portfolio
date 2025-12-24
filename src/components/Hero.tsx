@@ -33,7 +33,7 @@ export default function Hero() {
             </Link>
             <Link
               href="#contact"
-              className="px-8 py-4 rounded-xl font-bold border border-slate-200 dark:border-slate-700 hover:border-blue-600 dark:hover:border-blue-400 transition-all text-slate-900 dark:text-white"
+              className="px-8 py-3 rounded-full bg-accent text-white font-medium hover:bg-accent/80 transition-all shadow-lg"
             >
               Contact Me
             </Link>
