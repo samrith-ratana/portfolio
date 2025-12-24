@@ -27,7 +27,7 @@ export default function Hero() {
           <div className="flex gap-4">
             <Link
               href="#experience"
-              className="bg-slate-900 dark:bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-700 dark:hover:bg-blue-500 transition-all"
+              className="px-8 py-3 rounded-full border border-white text-white font-medium hover:bg-white hover:text-primary transition-all shadow-lg"
             >
               View Work
             </Link>
