@@ -1,66 +1,47 @@
-'use client';
-import React from 'react';
-import { Code, Database, Server, PenTool } from 'lucide-react';
-import Image from 'next/image';
-
-const skills = [
-  { name: 'Frontend', description: 'React, Next.js, Tailwind CSS, TypeScript', icon: <Code className="text-accent" /> },
-  { name: 'Backend', description: 'Node.js, Express, Python, Django', icon: <Server className="text-accent" /> },
-  { name: 'Databases', description: 'PostgreSQL, MongoDB, Firebase', icon: <Database className="text-accent" /> },
-  { name: 'Design', description: 'Figma, UI/UX Principles', icon: <PenTool className="text-accent" /> },
-];
-
-const About = () => {
+export default function About() {
   return (
-    <section id="about" className="py-24 bg-gradient-to-b from-gray-900 via-gray-950 to-black text-white">
-      <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-extrabold text-center mb-6 tracking-tight">👨‍💻 About Me</h2>
-        <p className="text-center text-secondary text-lg max-w-2xl mx-auto mb-16">
-          Passionate full-stack developer with a focus on clean UI, efficient backend, and problem-solving. I love bringing ideas to life through code.
-        </p>
-
-        <div className="flex flex-col md:flex-row items-center gap-14">
-          <div className="md:w-1/3">
-
-            <Image
-              src="/profile.png"
-              alt="Your Name"
-              width={400}
-              height={400}
-              className="rounded-full shadow-2xl mx-auto"
-            />
-
-          </div>
-          <div className="md:w-2/3 text-lg text-secondary leading-relaxed space-y-5">
-            <p>
-              Hello! Im a software developer based in <span className="text-white font-semibold">Phnom Penh</span>, crafting full-stack web applications with thoughtful user experiences and solid backend logic.
-            </p>
-            <p>
-              I enjoy working across the stack and love building tools that solve real problems. Outside of tech, I enjoy <span className="text-white font-medium">reading</span>, <span className="text-white font-medium">coding</span>, and exploring new ideas in design and AI.
-            </p>
-          </div>
+    <section id="about" className="py-24 px-8 border-t border-slate-100 dark:border-slate-800 scroll-mt-20">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
+        <div>
+          <h2 className="text-6xl font-extrabold tracking-tight sticky top-32 text-slate-900 dark:text-white">
+            About
+            <div className="h-1.5 w-[70px] bg-blue-300 mt-2 rounded-full"></div>
+          </h2>
         </div>
-
-        <div className="mt-24">
-          <h3 className="text-3xl font-bold text-center mb-12">🛠 My Skills</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {skills.map((skill) => (
-              <div
-                key={skill.name}
-                className="bg-gray-800 hover:bg-gray-700 p-6 rounded-2xl shadow-md text-center transition-all duration-300 group"
-              >
-                <div className="flex justify-center mb-4 transition-transform group-hover:scale-110">
-                  {React.cloneElement(skill.icon, { size: 40 })}
+        <div className="md:col-span-2 pl-0 md:pl-12">
+          <div className="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl p-8 shadow-sm">
+            <p className="text-xl font-semibold mb-6 text-slate-800 dark:text-slate-200 leading-snug">
+              I am a Software Developer driven by the challenge of solving complex problems through elegant, high-performance code.
+            </p>
+            <div className="space-y-4 text-slate-500 dark:text-slate-400 leading-relaxed text-sm md:text-base">
+              <p>
+                With a solid foundation in <strong>Computer Engineering</strong> and professional experience in <strong>Fintech and System Automation</strong>, I specialize in crafting robust backend architectures that prioritize security and efficiency.
+              </p>
+              <p>
+                I believe that great software isn't just about functionality—it's about building systems that are maintainable, scalable, and intuitive. Whether I'm optimizing SQL queries or developing custom .NET plugins, my goal is always to deliver high-quality solutions.
+              </p>
+              <div className="pt-6 grid grid-cols-2 gap-6">
+                <div>
+                  <h4 className="font-bold text-slate-900 dark:text-white mb-2 uppercase text-[10px] tracking-widest">
+                    Main Stack
+                  </h4>
+                  <p className="font-mono text-xs text-blue-600 dark:text-blue-400">
+                    .NET • Spring Boot • React • PostgreSQL
+                  </p>
                 </div>
-                <h4 className="text-xl font-semibold mb-2">{skill.name}</h4>
-                <p className="text-gray-400">{skill.description}</p>
+                <div>
+                  <h4 className="font-bold text-slate-900 dark:text-white mb-2 uppercase text-[10px] tracking-widest">
+                    Core Focus
+                  </h4>
+                  <p className="font-mono text-xs text-blue-600 dark:text-blue-400">
+                    System Design • API Security • Automation
+                  </p>
+                </div>
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </div>
     </section>
   );
-};
-
-export default About;
+}

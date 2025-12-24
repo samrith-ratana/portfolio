@@ -1,41 +1,58 @@
+"use client";
 
-import React from 'react';
-import { Home, User, Briefcase, Mail } from 'lucide-react';
-import ThemeToggle from "@/components/themes/ThemeToggle";
+import { useState, useEffect } from "react";
+import { useTheme } from "next-themes";
+import { Moon, Sun } from "lucide-react";
+import Link from "next/link";
 
-const Navbar = () => {
-  const navItems = [
-    { href: '#home', label: 'Home', icon: <Home size={20} /> },
-    { href: '#about', label: 'About', icon: <User size={20} /> },
-    { href: '#projects', label: 'Projects', icon: <Briefcase size={20} /> },
-    { href: '#contact', label: 'Contact', icon: <Mail size={20} /> },
+export default function Navbar() {
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  // Avoid hydration mismatch
+  useEffect(() => setMounted(true), []);
+
+  const navLinks = [
+    { name: "Home", href: "#home" },
+    { name: "About", href: "#about" },
+    { name: "Education", href: "#education" },
+    { name: "Experience", href: "#experience" },
+    { name: "Contact", href: "#contact" },
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-primary/80 backdrop-blur-sm z-50 shadow-md">
-      <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="#home" className="text-2xl font-bold text-white hover:text-accent transition-colors">
-          Mr. Samrith Ratana
-        </a>
-        <div className="hidden md:flex space-x-8">
-          {navItems.map((item) => (
-            <a
-              key={item.label}
-              href={item.href}
-              className="text-secondary hover:text-accent transition-colors flex items-center gap-2"
-            >
-              {item.icon}
-              <span>{item.label}</span>
-            </a>
-          ))}
+    <nav className="fixed top-0 w-full bg-white/80 dark:bg-slate-950/80 backdrop-blur-lg z-50 border-b border-slate-100 dark:border-slate-800 transition-colors duration-300">
+      <div className="max-w-6xl mx-auto px-8 py-5 flex justify-between items-center">
+        <span className="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+          RATAN.DEV
+        </span>
+
+        <div className="flex items-center space-x-10">
+          <div className="hidden md:flex space-x-10 text-sm font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest">
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                href={link.href}
+                className="hover:text-blue-600 transition-colors"
+              >
+                {link.name}
+              </Link>
+            ))}
+          </div>
+
+          <button
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            className="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 hover:ring-2 ring-blue-400 transition-all text-slate-700 dark:text-slate-200"
+            aria-label="Toggle Dark Mode"
+          >
+            {mounted ? (
+              theme === "dark" ? <Sun size={20} /> : <Moon size={20} />
+            ) : (
+              <div className="w-5 h-5" /> // Placeholder to prevent layout shift
+            )}
+          </button>
         </div>
-        <div className="md:hidden">
-          {/* Mobile menu button can be added here */}
-        </div>
-        <ThemeToggle/>
       </div>
     </nav>
   );
-};
-
-export default Navbar;
+}
