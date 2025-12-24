@@ -27,7 +27,7 @@ export default function Experience() {
           <ExperienceCard 
             title="Backend Developer"
             company="Team Evolve"
-            period="Sep 2023 — Mar 2025"
+            period="Sep 2024 — Mar 2025"
             items={[
               "Built backend services with .NET MVC & Spring Boot.",
               "Optimized database performance by tuning slow SQL queries.",

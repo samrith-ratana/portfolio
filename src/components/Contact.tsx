@@ -29,10 +29,10 @@ export default function Contact() {
               <div className="pt-6 border-t border-slate-100 dark:border-slate-800">
                 <p className="text-[10px] uppercase tracking-widest font-bold text-slate-400 mb-4">Social Ecosystem</p>
                 <div className="flex space-x-5 text-slate-400">
-                  <SocialIcon href="https://github.com/ISamrithRatana" icon={<Github size={20} />} />
+                  <SocialIcon href="https://github.com/samrith-ratana" icon={<Github size={20} />} />
                   <SocialIcon href="https://www.linkedin.com/in/samrith-ratana" icon={<Linkedin size={20} />} />
                   <SocialIcon href="https://x.com/samrith_ratana" icon={<Twitter size={20} />} />
-                  <SocialIcon href="#" icon={<Facebook size={20} />} />
+                  <SocialIcon href="https://www.facebook.com/samrith.ratana.ken" icon={<Facebook size={20} />} />
                 </div>
               </div>
             </div>
