@@ -26,7 +26,7 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full bg-white/80 dark:bg-slate-950/80 backdrop-blur-lg z-50 border-b border-slate-100 dark:border-slate-800 transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-8 py-5 flex justify-between items-center">
         <span className="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white">
-          RATAN.DEV
+          SAMRITH RATANA.dev
         </span>
 
         <div className="flex items-center space-x-10">
@@ -42,7 +42,7 @@ export default function Navbar() {
             ))}
           </div>
 
-<ThemeToggle/>
+        <ThemeToggle/>
         </div>
       </div>
     </nav>
