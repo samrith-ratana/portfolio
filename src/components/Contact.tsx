@@ -31,7 +31,7 @@ export default function Contact() {
                 <div className="flex space-x-5 text-slate-400">
                   <SocialIcon href="https://github.com/samrith-ratana" icon={<Github size={20} />} />
                   <SocialIcon href="https://www.linkedin.com/in/samrith-ratana" icon={<Linkedin size={20} />} />
-                  <SocialIcon href="https://x.com/samrith_ratana" icon={<Twitter size={20} />} />
+                  <SocialIcon href="https://x.com/Samrith_Ratana" icon={<Twitter size={20} />} />
                   <SocialIcon href="https://www.facebook.com/samrith.ratana.ken" icon={<Facebook size={20} />} />
                 </div>
               </div>

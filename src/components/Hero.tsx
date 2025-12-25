@@ -18,10 +18,10 @@ export default function Hero() {
           </p>
 
           <div className="flex space-x-6 mb-10 text-slate-400 dark:text-slate-500">
-            <SocialLink href="https://github.com/ISamrithRatana" icon={<Github />} />
+            <SocialLink href="https://github.com/samrith-ratana" icon={<Github />} />
             <SocialLink href="https://www.linkedin.com/in/samrith-ratana" icon={<Linkedin />} />
-            <SocialLink href="https://x.com/samrith_ratana" icon={<Twitter />} />
-            <SocialLink href="#" icon={<Facebook />} />
+            <SocialLink href="https://x.com/Samrith_Ratana" icon={<Twitter />} />
+            <SocialLink href="https://web.facebook.com/samrith.ratana.ken" icon={<Facebook />} />
           </div>
 
           <div className="flex gap-4">
