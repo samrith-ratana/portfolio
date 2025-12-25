@@ -26,10 +26,10 @@ export default function Hero() {
 
           <div className="flex gap-4">
             <Link
-              href="#experience"
+              href="#about"
               className="px-8 py-3 dark:text-white rounded-full dark:border-white border border-black text-black font-medium hover:bg-white dark:hover:text-black hover:text-primary transition-all shadow-lg"
             >
-              View Work
+              About Me
             </Link>
             <Link
               href="#contact"
