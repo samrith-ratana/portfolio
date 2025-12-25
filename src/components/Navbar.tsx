@@ -1,18 +1,11 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { useTheme } from "next-themes";
-import { Moon, Sun } from "lucide-react";
+
 import Link from "next/link";
 import ThemeToggle from "@/components/themes/ThemeToggle";
 
 
 export default function Navbar() {
-  const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-
-  // Avoid hydration mismatch
-  useEffect(() => setMounted(true), []);
 
   const navLinks = [
     { name: "Home", href: "#home" },
@@ -25,8 +18,8 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 w-full bg-white/80 dark:bg-slate-950/80 backdrop-blur-lg z-50 border-b border-slate-100 dark:border-slate-800 transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-8 py-5 flex justify-between items-center">
-        <span className="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white">
-          SAMRITH RATANA.dev
+        <span className="text-xl font-bold tracking-tight text-slate-900 dark:text-white">
+          SAMRITH RATANA
         </span>
 
         <div className="flex items-center space-x-10">

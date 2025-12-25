@@ -16,8 +16,7 @@ export default function About() {
 
   return (
     <section id="about" className="py-24 px-8 border-t border-slate-100 dark:border-slate-800 scroll-mt-20">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12 items-start">
-        
+      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
         {/* Left Column: Heading */}
         <div>
           <h2 className="text-6xl font-extrabold tracking-tight sticky top-32 text-slate-900 dark:text-white">
