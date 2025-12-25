@@ -7,9 +7,31 @@ export default function Hero() {
     <section id="home" className="pt-30 pb-24 px-8 scroll-mt-20">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
         <div>
-          <p className="font-mono text-sm tracking-widest text-blue-600 dark:text-blue-400 font-bold mb-4 uppercase">
-            Software Developer
-          </p>
+          <div className="flex items-center gap-3 font-mono text-sm tracking-widest font-bold mb-4 uppercase">
+            {/* Your Title */}
+            <span className="text-blue-600 dark:text-blue-400">
+              Software Developer
+            </span>
+
+            {/* Separator Dot (Hidden on very small screens) */}
+            <span className="hidden sm:block w-1 h-1 rounded-full bg-slate-300 dark:bg-slate-600"></span>
+
+            {/* "Available" Badge with Animation */}
+            <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-100 dark:border-emerald-900/50">
+              
+              {/* The Pulsing Dot Animation */}
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+              </span>
+
+              {/* Status Text */}
+              <span className="text-emerald-600 dark:text-emerald-400 text-[10px] sm:text-xs tracking-wide">
+                Open to Work
+              </span>
+          </div>
+
+          </div>
           <h2 className="text-6xl md:text-8xl font-extrabold tracking-tight leading-none mb-8 text-slate-900 dark:text-white">
             Hi, I&apos;m <span className="text-blue-600 dark:text-blue-400">Ratana</span>
           </h2>
