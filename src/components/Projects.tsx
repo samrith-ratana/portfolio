@@ -70,15 +70,6 @@ export default function Projects() {
 function ProjectCard({ project }: { project: any }) {
   return (
     <div className="group relative bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-3xl overflow-hidden hover:shadow-xl hover:shadow-blue-500/5 transition-all duration-300 hover:-translate-y-1">
-      
-      {/* 1. Project Image / Gradient Placeholder */}
-      <div className="h-48 overflow-hidden bg-slate-100 dark:bg-slate-800 relative">
-        {/* If you have images, use <img> tag here. If not, this gradient acts as a cover */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-slate-100 dark:from-slate-800 dark:to-slate-900 flex items-center justify-center">
-            <FolderGit2 className="text-blue-200 dark:text-slate-700 w-24 h-24 opacity-50" />
-        </div>
-        {/* <img src={project.image} alt={project.title} className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500" /> */}
-      </div>
 
       {/* 2. Content Body */}
       <div className="p-8">
