@@ -14,11 +14,11 @@ export default function Education() {
               <div>
                 <h3 className="text-2xl font-bold mb-1 text-slate-900 dark:text-white">Bachelor of Engineering in IT</h3>
                 <p className="text-blue-500 dark:text-blue-400 font-mono text-sm font-bold">
-                  Cambodian Mekong University
+                  Cambodian Mekong University (CMU)
                 </p>
               </div>
               <span className="text-xs font-bold text-slate-400 uppercase tracking-widest mt-2 md:mt-0">
-                2022 — 2024
+                2022 — Present
               </span>
             </div>
             <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
