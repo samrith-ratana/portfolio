@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, ExternalLink, FolderGit2, ArrowUpRight } from "lucide-react";
+import { Github, ExternalLink, ArrowUpRight } from "lucide-react";
 
 export default function Projects() {
   // 1. EDIT YOUR PROJECT DATA HERE
