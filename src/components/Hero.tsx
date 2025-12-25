@@ -29,7 +29,7 @@ export default function Hero() {
               <span className="text-emerald-600 dark:text-emerald-400 text-[10px] sm:text-xs tracking-wide">
                 Open to Work
               </span>
-          </div>
+            </div>
 
           </div>
           <h2 className="text-6xl md:text-8xl font-extrabold tracking-tight leading-none mb-8 text-slate-900 dark:text-white">
@@ -66,7 +66,7 @@ export default function Hero() {
           <div className="relative group">
             <div className="absolute inset-0 rounded-full bg-blue-500/10 blur-2xl group-hover:bg-blue-500/20 transition-all duration-700"></div>
             {/* Ensure you have profile.png in your public folder */}
-            <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl">
+            <div className="relative w-80 h-80 md:w-90 md:h-90 rounded-full overflow-hidden shadow-2xl">
               <Image
                 src="/profile.png"
                 alt="Ratana Profile"
