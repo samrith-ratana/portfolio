@@ -3,6 +3,7 @@ import React from "react";
 export default function About() {
   const skills = [
     "C# / .NET",
+    "Next.js",
     "SQL Server & Oracle ",
     "Django Framework (Python)",
     "API Development & Integration",
