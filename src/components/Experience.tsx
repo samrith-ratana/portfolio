@@ -14,24 +14,13 @@ export default function Experience() {
           before:content-[''] before:absolute before:left-[20px] before:top-0 before:bottom-0 before:w-[2px] before:bg-slate-200 dark:before:bg-slate-800">
           
           <ExperienceCard 
-            title="C# Developer"
-            company="School"
-            period="Mar 2025 — Present"
+            title="Software Developer"
+            company="Open to Work"
+            period="Present"
             items={[
               "Developed and maintained .NET plugins.",
               "Integrated third-party APIs for platform enhancement.",
               "Customized CRM workflows to improve internal UX."
-            ]}
-          />
-
-          <ExperienceCard 
-            title="Backend Developer"
-            company="Team Evolve"
-            period="Sep 2024 — Mar 2025"
-            items={[
-              "Built backend services with .NET MVC & Spring Boot.",
-              "Optimized database performance by tuning slow SQL queries.",
-              "Developed Windows Services for high-priority task automation."
             ]}
           />
 

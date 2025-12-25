@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
         <div>
           <p className="font-mono text-sm tracking-widest text-blue-600 dark:text-blue-400 font-bold mb-4 uppercase">
-            Backend / Full-Stack Developer
+            Software Developer
           </p>
           <h2 className="text-6xl md:text-8xl font-extrabold tracking-tight leading-none mb-8 text-slate-900 dark:text-white">
             Hi, I&apos;m <span className="text-blue-600 dark:text-blue-400">Ratana</span>
@@ -27,13 +27,13 @@ export default function Hero() {
           <div className="flex gap-4">
             <Link
               href="#experience"
-              className="px-8 py-3 rounded-full border border-white text-white font-medium hover:bg-white hover:text-primary transition-all shadow-lg"
+              className="px-8 py-3 dark:text-white rounded-full dark:border-white border border-black text-black font-medium hover:bg-white dark:hover:text-black hover:text-primary transition-all shadow-lg"
             >
               View Work
             </Link>
             <Link
               href="#contact"
-              className="px-8 py-3 rounded-full bg-accent text-white font-medium hover:bg-accent/80 transition-all shadow-lg"
+              className="px-8 py-3 dark:text-white rounded-full bg-accent  text-black font-medium hover:bg-accent/80 transition-all shadow-lg"
             >
               Contact Me
             </Link>
