@@ -15,11 +15,11 @@ export default function Contact() {
     await new Promise((resolve) => setTimeout(resolve, 1500));
 
     // Logic: Here you would usually send data to EmailJS or your API
-    alert("Message sent successfully! (This is a demo)");
+    alert("Message Not sent successfully! (This is a demo)");
     
     setLoading(false);
     // Optional: Reset form here
-    // (e.target as HTMLFormElement).reset();
+    (e.target as HTMLFormElement).reset();
   }
 
   return (
