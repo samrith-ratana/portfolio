@@ -15,7 +15,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 w-full bg-white/80 dark:bg-slate-950/80 backdrop-blur-lg z-50 border-b border-slate-100 dark:border-slate-800 transition-colors duration-300">
+    <nav className="fixed top-0 w-full bg-primary/80 backdrop-blur-sm z-50 border-b border-slate-100 dark:border-slate-800 transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-8 py-5 flex justify-between items-center">
         <span className="text-xl font-medium tracking-tight text-slate-900 dark:text-white">
           SAMRITH RATANA

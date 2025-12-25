@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function About() {
   const skills = [
     "C# / .NET",
@@ -15,7 +13,7 @@ export default function About() {
   
 
   return (
-    <section id="about" className="py-24 px-8 border-t border-slate-100 dark:border-slate-800 scroll-mt-20">
+    <section id="about" className="py-24 px-8 bg-slate-50 dark:bg-slate-900/50 border-t border-slate-100 dark:border-slate-800 scroll-mt-20">
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
         {/* Left Column: Heading */}
         <div>

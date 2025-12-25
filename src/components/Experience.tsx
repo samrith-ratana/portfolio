@@ -1,6 +1,6 @@
 export default function Experience() {
   return (
-    <section id="experience" className="py-24 px-8 bg-slate-50/50 dark:bg-slate-900/30 border-t border-slate-100 dark:border-slate-800 scroll-mt-20">
+    <section id="experience" className="py-24 px-8  dark:bg-slate-900/50 border-t bg-slate-50 border-slate-100 dark:border-slate-800 scroll-mt-20">
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
         <div>
           <h2 className="text-6xl font-extrabold tracking-tight sticky top-32 text-slate-900 dark:text-white">

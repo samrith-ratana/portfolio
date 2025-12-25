@@ -31,7 +31,7 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-24 px-8 bg-slate-50/50 dark:bg-slate-900/30 border-t border-slate-100 dark:border-slate-800 scroll-mt-20">
+    <section id="projects" className="py-24 px-8 bg-slate-50 dark:bg-slate-900/50 border-t border-slate-100 dark:border-slate-800 scroll-mt-20">
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
         
         {/* Sticky Header */}

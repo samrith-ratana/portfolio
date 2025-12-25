@@ -1,6 +1,6 @@
 export default function Education() {
   return (
-    <section id="education" className="py-24 px-8 border-t border-slate-100 dark:border-slate-800 scroll-mt-20">
+    <section id="education" className="py-24 px-8 bg-slate-50 dark:bg-slate-900/50 border-t border-slate-100 dark:border-slate-800 scroll-mt-20">
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
         <div>
           <h2 className="text-6xl font-extrabold tracking-tight sticky top-32 text-slate-900 dark:text-white">
