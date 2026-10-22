@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { useTheme } from "next-themes";
 import {
@@ -58,6 +58,8 @@ function Timeline({ items }: { items: typeof experience }) {
 
 export default function Page() {
   const { resolvedTheme, setTheme } = useTheme();
+  const navRef = useRef<HTMLElement>(null);
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
   const [mounted, setMounted] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
@@ -76,24 +78,45 @@ export default function Page() {
     return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+    if (!menuOpen) return;
+
+    const handlePointerDown = (event: PointerEvent) => {
+      if (!navRef.current?.contains(event.target as Node)) setMenuOpen(false);
+    };
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setMenuOpen(false);
+        menuButtonRef.current?.focus();
+      }
+    };
+
+    document.addEventListener("pointerdown", handlePointerDown);
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.removeEventListener("pointerdown", handlePointerDown);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [menuOpen]);
+
   const closeMenu = () => setMenuOpen(false);
 
   return (
     <>
-      <header className="nav-wrap container">
+      <header className="nav-wrap container" ref={navRef}>
         <nav className="nav" aria-label="Main navigation">
           <div className="nav-core">
             <a className="brand" href="#home" onClick={closeMenu}><span className="brand-mark">SR</span><span>Samrith Ratana</span></a>
-            <div className={`nav-links${menuOpen ? " open" : ""}`}>
-              {navigation.map(([label, id]) => <a key={id} className={activeSection === id ? "active" : ""} href={`#${id}`} onClick={closeMenu}>{label}</a>)}
+            <div className={`nav-links${menuOpen ? " open" : ""}`} id="primary-navigation">
+              {navigation.map(([label, id]) => <a key={id} className={activeSection === id ? "active" : ""} aria-current={activeSection === id ? "location" : undefined} href={`#${id}`} onClick={closeMenu}>{label}</a>)}
             </div>
           </div>
           <div className="nav-actions">
             <button className="icon-button" type="button" onClick={() => setTheme(dark ? "light" : "dark")} aria-label={dark ? "Switch to light appearance" : "Switch to dark appearance"} title="Toggle light/dark appearance">
               {dark ? <Sun size={17} aria-hidden="true" /> : <Moon size={17} aria-hidden="true" />}
             </button>
-            <a className="download-button" href="#contact"><span><Mail size={14} aria-hidden="true" /></span> Let&apos;s connect <ArrowUpRight size={13} aria-hidden="true" /></a>
-            <button className="menu-button" type="button" onClick={() => setMenuOpen(open => !open)} aria-label={menuOpen ? "Close navigation" : "Open navigation"} aria-expanded={menuOpen}>{menuOpen ? <X size={17} /> : <Menu size={17} />}</button>
+            <a className="download-button" href="mailto:samrithratana@outlook.com" aria-label="Email Samrith Ratana"><span><Mail size={16} aria-hidden="true" /></span> Let&apos;s connect <ArrowUpRight size={13} aria-hidden="true" /></a>
+            <button ref={menuButtonRef} className={`menu-button${menuOpen ? " is-open" : ""}`} type="button" onClick={() => setMenuOpen(open => !open)} aria-label={menuOpen ? "Close navigation" : "Open navigation"} aria-expanded={menuOpen} aria-controls="primary-navigation">{menuOpen ? <X size={18} /> : <Menu size={18} />}</button>
           </div>
         </nav>
       </header>
