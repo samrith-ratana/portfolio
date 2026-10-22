@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420">
+  <defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#233d37"/><stop offset="1" stop-color="#9b8b69"/></linearGradient><linearGradient id="panel" y2="1"><stop stop-color="#fff" stop-opacity=".96"/><stop offset="1" stop-color="#f1efe9" stop-opacity=".9"/></linearGradient></defs>
+  <rect width="800" height="420" fill="url(#bg)"/><circle cx="650" cy="80" r="130" fill="#e8d6ad" opacity=".32"/><path d="M0 305q160-130 330 0t470-20v135H0z" fill="#243b33" opacity=".7"/>
+  <rect x="30" y="25" width="740" height="370" rx="18" fill="url(#panel)"/>
+  <text x="66" y="78" font-family="Georgia,serif" font-size="15" fill="#667569" letter-spacing="4">SAMRITH &amp; SOPHEA</text><text x="66" y="160" font-family="Georgia,serif" font-size="48" fill="#304238">Our Wedding</text><text x="68" y="193" font-family="Arial,sans-serif" font-size="15" fill="#758174">A celebration of love, family &amp; forever</text>
+  <rect x="66" y="225" width="150" height="40" rx="20" fill="#4d6954"/><text x="91" y="250" font-family="Arial,sans-serif" font-size="13" fill="white">View invitation</text>
+  <path d="M515 278c-38-58-8-107 34-107 35 0 42 32 42 32s11-31 43-27c48 6 53 67 16 112l-47 60z" fill="#24363d"/><circle cx="542" cy="142" r="36" fill="#d6a78c"/><circle cx="622" cy="147" r="36" fill="#efc7a6"/><path d="M506 137q10-47 48-31l24 24q-36-18-73 7zm80 7q3-44 42-37l28 30q-38-20-70 7z" fill="#292a2b"/>
+</svg>
