@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import type { ReactNode } from "react";
+import Image from "next/image";
 import { useTheme } from "next-themes";
 import {
   ArrowRight,
@@ -269,8 +270,17 @@ export default function Home() {
                 <a href="mailto:your.email@example.com" aria-label="Email"><Mail size={17} aria-hidden="true" /></a>
               </div>
             </div>
-            <div className="hero-art" aria-label="Profile monogram">
-              <div className="orb"><div className="initials">SR</div></div>
+            <div className="hero-art">
+              <div className="orb">
+                <Image
+                  src="/profile.png"
+                  alt="Samrith Ratana"
+                  fill
+                  priority
+                  sizes="(max-width: 680px) 160px, 246px"
+                  className="profile-photo"
+                />
+              </div>
               <div className="float-card"><span className="online-dot" />Available for<b>new opportunities</b></div>
             </div>
           </div>
