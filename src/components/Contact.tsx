@@ -1,7 +1,8 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Github, Linkedin, Twitter, Facebook, Mail, Phone, Send } from "lucide-react";
+import { Mail, Phone, Send } from "lucide-react";
+import SocialMark from "@/components/SocialMark";
 
 export default function Contact() {
   const [loading, setLoading] = useState(false);
@@ -67,10 +68,10 @@ export default function Contact() {
               <div className="pt-6 border-t border-slate-100 dark:border-slate-800">
                 <p className="text-[10px] uppercase tracking-widest font-bold text-slate-400 mb-4">Social Ecosystem</p>
                 <div className="flex space-x-4 text-slate-400">
-                  <SocialIcon href="https://github.com/samrith-ratana" icon={<Github size={20} />} />
-                  <SocialIcon href="https://www.linkedin.com/in/samrith-ratana" icon={<Linkedin size={20} />} />
-                  <SocialIcon href="https://x.com/Samrith_Ratana" icon={<Twitter size={20} />} />
-                  <SocialIcon href="https://www.facebook.com/samrith.ratana.ken" icon={<Facebook size={20} />} />
+                  <SocialIcon href="https://github.com/samrith-ratana" label="GitHub" icon={<SocialMark network="github" />} />
+                  <SocialIcon href="https://www.linkedin.com/in/samrith-ratana" label="LinkedIn" icon={<SocialMark network="linkedin" />} />
+                  <SocialIcon href="https://x.com/Samrith_Ratana" label="X" icon={<SocialMark network="x" />} />
+                  <SocialIcon href="https://www.facebook.com/samrith.ratana.ken" label="Facebook" icon={<SocialMark network="facebook" />} />
                 </div>
               </div>
             </div>
@@ -136,12 +137,13 @@ export default function Contact() {
 }
 
 // Helper Component for consistency
-function SocialIcon({ href, icon }: { href: string; icon: React.ReactNode }) {
+function SocialIcon({ href, label, icon }: { href: string; label: string; icon: React.ReactNode }) {
   return (
     <a 
       href={href} 
       target="_blank" 
       rel="noopener noreferrer" 
+      aria-label={label}
       className="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-blue-600 dark:hover:text-blue-400 transition-all"
     >
       {icon}

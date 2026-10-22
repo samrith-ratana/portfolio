@@ -1,5 +1,6 @@
 import React from "react";
-import { Github, ExternalLink, ArrowUpRight } from "lucide-react";
+import { ExternalLink, ArrowUpRight } from "lucide-react";
+import SocialMark from "@/components/SocialMark";
 
 export default function Projects() {
   // 1. EDIT YOUR PROJECT DATA HERE
@@ -82,7 +83,7 @@ function ProjectCard({ project }: { project: any }) {
           <div className="flex gap-3">
             {project.github && (
               <a href={project.github} target="_blank" rel="noreferrer" className="text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors" title="View Code">
-                <Github size={20} />
+                <SocialMark network="github" size={20} />
               </a>
             )}
             {project.live && (

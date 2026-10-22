@@ -1,6 +1,6 @@
-import { Github, Linkedin, Twitter, Facebook } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import SocialMark from "@/components/SocialMark";
 
 export default function Hero() {
   return (
@@ -40,10 +40,10 @@ export default function Hero() {
           </p>
 
           <div className="flex space-x-6 mb-10 text-slate-400 dark:text-slate-500">
-            <SocialLink href="https://github.com/samrith-ratana" icon={<Github />} />
-            <SocialLink href="https://www.linkedin.com/in/samrith-ratana" icon={<Linkedin />} />
-            <SocialLink href="https://x.com/Samrith_Ratana" icon={<Twitter />} />
-            <SocialLink href="https://web.facebook.com/samrith.ratana.ken" icon={<Facebook />} />
+            <SocialLink href="https://github.com/samrith-ratana" label="GitHub" icon={<SocialMark network="github" />} />
+            <SocialLink href="https://www.linkedin.com/in/samrith-ratana" label="LinkedIn" icon={<SocialMark network="linkedin" />} />
+            <SocialLink href="https://x.com/Samrith_Ratana" label="X" icon={<SocialMark network="x" />} />
+            <SocialLink href="https://web.facebook.com/samrith.ratana.ken" label="Facebook" icon={<SocialMark network="facebook" />} />
           </div>
 
           <div className="flex gap-4">
@@ -81,12 +81,13 @@ export default function Hero() {
   );
 }
 
-function SocialLink({ href, icon }: { href: string; icon: React.ReactNode }) {
+function SocialLink({ href, label, icon }: { href: string; label: string; icon: React.ReactNode }) {
   return (
     <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
+      aria-label={label}
       className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
     >
       {icon}
