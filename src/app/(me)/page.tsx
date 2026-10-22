@@ -16,9 +16,9 @@ const navigation = [
 ] as const;
 
 const skills = [
-  ["next", "Next.js"], ["react", "React"], ["typescript", "TypeScript"], ["django", "Django"],
-  ["node", "Node.js"], ["express", "Express"], ["postgres", "PostgreSQL"], ["oracle", "Oracle"],
-  ["docker", "Docker"], ["linux", "Linux"], ["tailwind", "Tailwind CSS"], ["git", "Git"],
+  ["nextjs", "Next.js"], ["react", "React"], ["typescript", "TypeScript"], ["django", "Django"],
+  ["nodejs", "Node.js"], ["express", "Express"], ["postgresql", "PostgreSQL"], ["oracle", "Oracle"],
+  ["docker", "Docker"], ["linux", "Linux"], ["tailwindcss", "Tailwind CSS"], ["git", "Git"],
 ];
 
 const projects = [
@@ -150,7 +150,7 @@ export default function Page() {
 
         <section id="skills"><div className="section-card glass">
           <SectionHeading icon={LayoutGrid} title="Skills & Technologies" />
-          <div className="skills-grid">{skills.map(([icon, name]) => <div className="skill-chip" key={name}><span className="skill-logo"><Image src={`/skills/${icon}.svg`} alt="" width={25} height={25} /></span><span>{name}</span></div>)}</div>
+          <div className="skills-grid">{skills.map(([icon, name]) => <div className="skill-chip" key={name}><span className="skill-logo"><Image src={`/png/${icon}.png`} alt="" width={25} height={25} /></span><span>{name}</span></div>)}</div>
         </div></section>
 
         <section id="projects"><div className="section-card glass">
